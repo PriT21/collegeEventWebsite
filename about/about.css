@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+/***Utils***/
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Body */
+.aboutCont {
+    margin-top: 6%;
+    width: 98.9vw;
+    height: 100%;
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .aboutCont::before {
+    content: "";
+    background: url("assets/aboutBackground.png") no-repeat center center/cover;
+    position: absolute;
+    opacity: 0.5;
+    top: 0vh;
+    left: 0px;
+    width:98.9vw;
+    height: 100%;
+    z-index: -1;
+  }
+  .aboutItem2Heading {
+    /* border: 2px solid rgb(92, 0, 0); */
+    height:15vh;
+  }
+  .aboutItem2HeadingText {
+    color: #1d4ed8;
+    font-family: "BIZ UDPMincho", sans-serif;
+    font-size: 6vh;
+  
+  }
+  .aboutItem2HeadingText:first-child {
+    font-family: "Angkor", serif;
+    font-style: normal;
+    position: absolute;
+    background:radial-gradient(  #fff,  #264aff,#fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 40%;
+    font-size: 12vh;
+  }
+  .aboutItemDescriptionText{
+    /* border: 2px solid rgb(92, 0, 0); */
+    width: 86%;
+    font-size: 2vh;
+    text-align: center;
+    
+  }
+  .aboutItemDescription{
+    margin-top: 3vh;
+  }
+  .aboutPicturesSlide{
+    margin-top: 10vh;
+    /* border: 2px solid red; */
+  }
+  .aboutPictures{
+    width: 80vw;
+    /* border: 2px solid rgb(9, 255, 0); */
+    justify-content: space-between ;
+  }
+  .aboutPic{
+
+  }
+  .aboutImg{
+    height: 28vh;
+    width: 25vw;
+  }
