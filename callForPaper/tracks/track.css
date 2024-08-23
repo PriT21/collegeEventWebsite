@@ -1,0 +1,70 @@
+h1 {
+        font-size: 2.5vw;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 7vh;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vw;
+      }
+      img {
+        width: 25vw;
+        height: 15vw;
+        border-radius: 30px;
+        object-fit: cover;
+      }
+      .img1 {
+        display: flex;
+        flex-direction: row;
+        gap: 4vw;
+      }
+      .imgdiv {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        
+      }
+      .imgtxt,
+      .imgtxt2 {
+        padding: 0vw 1.5vw;
+        display: flex;
+        text-transform: capitalize;
+        font-weight: 300;
+        justify-content: space-between;
+        transform: translateY(-4.5vw);
+        color: rgb(255, 255, 255);
+        font-size: 1.3vw;
+        width: 21vw;
+      }
+      .imgtxt:hover {
+        cursor: pointer;
+      }
+      .imgtxt i {
+        font-size: 2vw;
+      }
+      .about,
+      .about2,
+      .about3,
+      .about4 {
+        display: none;
+        transform: 2s ease-in-out;
+
+        background-color: rgb(192, 193, 192);
+        border-radius: 0px 0px 20px 20px;
+
+        font-size: 1vw;
+        color: black;
+        width: 23vw;
+        padding: 1vw;
+        transform: translateY(-4vw);
+        transition: 2s cubic-bezier(0, 0, 1, -0.35);
+      }
