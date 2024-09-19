@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /***Utils***/
+  .flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  a{
+      /* border: 1px solid red; */
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+  }
+  /*  */
+
+  .fullContainer::before{
+    content: "";
+  background: url("assets/callBackground.png") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 40vw;
+  height: 100vh;
+  z-index: -1;
+}
+.container1 {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+}
+ .leftContainer{
+    /* border: 2px solid red; */
+    width: 400vw;
+    height: 100vh;
+ }
+ .leftBody{
+    /* border: 2px solid green; */
+    width: 90%;
+    margin: 12vh auto;
+ }
+ .aboutItem2Heading {
+    /* border: 2px solid rgb(92, 0, 0); */
+    height:15vh;
+  }
+  .aboutItem2HeadingText {
+    /* border: 2px solid rgb(87, 97, 0); */
+    color: #1d4ed8;
+    font-family: "BIZ UDPMincho", sans-serif;
+    font-size: 6vh;
+  
+  }
+  .aboutItem2HeadingText:first-child {
+    font-family: "Angkor", serif;
+    font-style: normal;
+    position: absolute;
+    background:radial-gradient(  #fff,  #354fd1,#fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 40%;
+    font-size: 12vh;
+  }
+
+/*This is Css for the Cards*/
+  .container {
+    display: flex;
+    justify-content: space-between; /* Keeps space between the items */
+    gap: 30px; /* Increased space between the items */
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between the items in each column */
+  }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .member {
+        width: calc(100% - 40px);
+    }
+
+    .title-large {
+        font-size: 50px;
+        top: -20px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .committee-btn {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
+  .box{
+
+    width: 17vw;
+    height: 17vh;
+    /* border: 1px solid red; */
+    margin: 0 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(62, 96, 233, 0.2);
+    
+}
+.box-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin: 3vh 0;
+    
+}
+.head1{
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    margin: 2vh;
+}
+.head2{
+    color: black;
+    height: 5vh;
+    margin-top: 1.5vh;
+    font-size: 16px;
+}
+  

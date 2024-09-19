@@ -34,7 +34,7 @@ a{
 .topCont {
  
   width: 98.9vw;
-  height: 110vh;
+  height: 130vh;
   color: black;
   font-weight: bold;
   font-size: 2rem;
@@ -48,7 +48,7 @@ a{
     top: 0px;
     left: 0px;
     width: 98.9vw;
-    height: 100vh;
+    height: 120vh;
     z-index: -1;
 }
 .topCont::before {
@@ -58,7 +58,7 @@ a{
   top: 0px;
   left: 0px;
   width: 98.9vw;
-  height: 100vh;
+  height: 120vh;
   z-index: -2;
 }
 
@@ -131,8 +131,8 @@ a{
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.893);
   width: 100%;
-  font-size: 2.3vh;
-  height:8vh;
+  font-size: 2vh;
+  height:10vh;
   padding: 2vh ;
   cursor: pointer;
 }
@@ -151,7 +151,18 @@ a{
     color: #4a74e7;
     text-shadow: 1.5px 1px 1px #000158;
 }
-
+.homeLogos{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 8vw;
+  align-items: center;
+  
+}
+.homeLogo img {
+  /* height: 15vh; */
+width: 17vw;
+margin-top: 10vh;
+}
 
 
 
@@ -167,7 +178,8 @@ a{
 .bodyTopCont{
     /* border: 4px solid black; */
 color: #ffffff;
-height:105vh;
+/* margin-top: 20vh; */
+height:70vh;
 }
 .bodyContainer{
     /* border: 2px solid sienna; */
@@ -176,7 +188,7 @@ width: 50vw;
 .headingBody{
     /* border: 1px solid rgb(190, 168, 0); */
    
-    margin: 15vh auto 4vh ;
+    margin: 2vh auto 4vh ;
     font-size: 10vh;
     width: 50vw;
    font-weight: 600;
@@ -367,10 +379,10 @@ font-size:2.5vh;
   background: url("assets/aboutBackground.png") no-repeat center center/cover;
   position: absolute;
   opacity: 0.5;
-  top: 280vh;
+  top: 220vh;
   left: 0px;
   width:98.9vw;
-  height: 110vh;
+  height: 130vh;
   z-index: -1;
 }
 
@@ -494,7 +506,7 @@ font-size:2.5vh;
 .lastCont {
    
   width: 98.9vw;
-  height: 80vh;
+  height: 100vh;
   color: black;
   font-weight: bold;
   font-size: 1rem;
@@ -505,7 +517,7 @@ font-size:2.5vh;
   position: absolute;
   
   opacity: 0.5;
-  top: 100vh;
+  top: 120vh;
   left: 0px;
   width:98.9vw;
   height: 100vh;
