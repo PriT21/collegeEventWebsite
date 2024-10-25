@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subject Tracks</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 0.5s ease-in-out forwards;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-10px);
+      transition: transform 0.3s ease;
+      box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1), 0 0 15px rgba(59, 130, 246, 0.6); /* Elevated shadow + glow effect */
+    }
+
+    .image-zoom {
+      transition: transform 0.3s ease;
+    }
+
+    .card-hover:hover .image-zoom {
+      transform: scale(1.05); 
+    }
+
+    .card-hover:active .image-zoom {
+      transform: scale(0.95); 
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #3b82f6;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px; 
+      text-align: center; 
+      font-size: 1.25rem; 
+      font-weight: 600; 
+      text-decoration: none;
+      transition: background-color 0.3s ease; 
+      margin-bottom: 1rem;
+    }
+
+    .button:hover {
+      background-color: #2563eb;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-black font-sans">
+
+  <section class="relative flex flex-col items-center justify-center py-16 px-4">
+
+    <h2 class="text-5xl md:text-6xl lg:text-7xl font-bold heading-text uppercase text-center z-10 fade-in mb-12" style="color: rgb(0, 106, 255);">
+      Subject Tracks
+  </h2>
+  
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 z-10 fade-in">
+      
+      <div class="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center text-center card-hover transition-all duration-300">
+        <img src="/assets/COMPUTING.png" alt="Applications of AI in Computing" class="w-full h-48 object-cover rounded-md mb-6 image-zoom">
+        <a href="#" class="button">Applications of AI in Computing</a>
+        <ul class="list-disc space-y-2 text-left pl-5">
+          <li><strong>Machine Learning and Deep Learning Innovations</strong></li>
+          <li><strong>Natural Language Processing Applications</strong></li>
+          <li><strong>AI in Cybersecurity</strong></li>
+          <li><strong>Ethics and Fairness in AI</strong></li>
+          <li><strong>AI for Fog Computing</strong></li>
+          <li><strong>AI in Cloud Computing</strong></li>
+          <li><strong>AI for Edge Computing</strong></li>
+          <li><strong>Reinforcement Learning Techniques</strong></li>
+          <li><strong>Computer Vision and Image Processing</strong></li>
+          <li><strong>Explainable AI (XAI)</strong></li>
+          <li><strong>AI for IIoT (Industrial Internet of Things)</strong></li>
+          <li><strong>Data Privacy and AI</strong></li>
+          <li><strong>AI-Driven Software Engineering</strong></li>
+          <li><strong>AI in Robotics and Automation</strong></li>
+          <li><strong>Augmented Reality and AI</strong></li>
+          <li><strong>AI for Predictive Analytics</strong></li>
+          <li><strong>AI in Healthcare Computing</strong></li>
+          <li><strong>Quantum Computing and AI</strong></li>
+          <li><strong>AI for Resource Optimization</strong></li>
+        </ul>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center text-center card-hover transition-all duration-300">
+        <img src="/assets/UAV.png" alt="AI applications in UAV Networks" class="w-full h-48 object-cover rounded-md mb-6 image-zoom">
+        <a href="#" class="button">AI applications in UAV Networks</a>
+        <ul class="list-disc space-y-2 text-left pl-5">
+            <li><strong>AI enabled UAV applications in Autonomous Navigation and Flight Control</strong></li>
+            <li><strong>Computer Vision Techniques for Smart UAVs</strong></li>
+            <li><strong>AI-Enhanced Object Detection and Tracking</strong></li>
+            <li><strong>Swarm Intelligence and Cooperative UAV Systems</strong></li>
+            <li><strong>Machine Learning for Environmental Monitoring</strong></li>
+            <li><strong>AI enabled UAV Applications in Precision Agriculture</strong></li>
+            <li><strong>Data Processing and Analysis for UAV Imagery</strong></li>
+            <li><strong>Ethics and Regulations in UAV AI Applications</strong></li>
+            <li><strong>UAVs in Search and Rescue Operations</strong></li>
+            <li><strong>Security Challenges in UAV Operations and AI Solutions</strong></li>
+            <li><strong>New opportunities/challenges/use cases for UAV-enabled IoT</strong></li>
+            <li><strong>UAV swarming and coordination for IoT deployments</strong></li>
+            <li><strong>UAV-assisted data collection and analytics for IoT applications</strong></li>
+            <li><strong>Protocols and architectures for UAV-enabled MEC</strong></li>
+            <li><strong>Computation offloading for UAV-enabled MEC</strong></li>
+            <li><strong>UAV’s trajectory design for UAV-enabled IoT</strong></li>
+            <li><strong>Spectrum management and multiple access schemes for UAV-enabled IoT</strong></li>
+            <li><strong>Green energy powered UAV-enabled IoT networks</strong></li>
+            <li><strong>MIMO/massive MIMO/millimeter wave technologies for UAV-enabled IoT</strong></li>
+            <li><strong>Quality of Service provisioning for UAV-enabled IoT</strong></li>
+            <li><strong>Network security and information assurance for UAV-enabled IoT</strong></li>
+
+        </ul>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center text-center card-hover transition-all duration-300">
+        <img src="/assets/ASTRONOMY.png" alt="AI in Astronomy" class="w-full h-48 object-cover rounded-md mb-6 image-zoom">
+        <a href="#" class="button">AI in Astronomy</a>
+        <ul class="list-disc space-y-2 text-left pl-5">
+            <li><strong>Machine Learning for Astrophysical Data Analysis</strong></li>
+            <li><strong>Deep Learning in Image Processing for Astronomy</strong></li>
+            <li><strong>AI for Exoplanet Detection and Characterization</strong></li>
+            <li><strong>Time Series Analysis of Astronomical Data</strong></li>
+            <li><strong>AI in Telescope Automation and Control</strong></li>
+            <li><strong>Big Data Challenges in Astronomy</strong></li>
+            <li><strong>AI-Driven Simulations of Cosmic Phenomena</strong></li>
+            <li><strong>Neural Networks for Galaxy Classification</strong></li>
+            <li><strong>AI Applications in Radio Astronomy</strong></li>
+            <li><strong>Machine Learning for Gravitational Wave Detection</strong></li>
+            <li><strong>Predictive Modeling of Stellar Evolution</strong></li>
+            <li><strong>Data Mining Techniques for Large Astronomical Surveys</strong></li>
+            <li><strong>AI for Cosmological Simulations and Modeling</strong></li>
+            <li><strong>Natural Language Processing in Astronomy Research</strong></li>
+            <li><strong>AI in Space Mission Planning and Operations</strong></li>
+            <li><strong>Anomaly Detection in Astronomical Observations</strong></li>
+            <li><strong>AI for Multi-Messenger Astronomy</strong></li>
+            <li><strong>Visualization Techniques for AI-Generated Astronomical Data</strong></li>
+            <li><strong>AI Ethics and Fairness in Astronomy Research</strong></li>
+            <li><strong>Future Trends: Quantum Computing and AI in Astronomy</strong></li>
+
+        </ul>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center text-center card-hover transition-all duration-300">
+        <img src="/assets/RENEWABLE AI.png" alt="AI in Renewable Energy" class="w-full h-48 object-cover rounded-md mb-6 image-zoom">
+        <a href="#" class="button">AI in Renewable Energy</a>
+        <ul class="list-disc space-y-2 text-left pl-5">
+          <li><strong>Machine Learning for Renewable Energy Forecasting</strong></li>
+          <li><strong>AI in Smart Grid Management and Optimization</strong></li>
+          <li><strong>Predictive Maintenance for Renewable Energy Systems</strong></li>
+          <li><strong>AI-Driven Energy Storage Solutions</strong></li>
+          <li><strong>Data Analytics for Solar Energy Performance</strong></li>
+          <li><strong>Wind Energy Prediction and Optimization using AI</strong></li>
+          <li><strong>AI in Electric Vehicle Integration with Renewable Energy</strong></li>
+          <li><strong>Decentralized Energy Management using Blockchain and AI</strong></li>
+          <li><strong>AI for Energy Demand Response Strategies</strong></li>
+          <li><strong>Computer Vision for Solar Panel Inspection</strong></li>
+          <li><strong>Optimizing Energy Efficiency in Buildings with AI</strong></li>
+          <li><strong>AI in Hydropower Generation and Management</strong></li>
+          <li><strong>Artificial Intelligence for Renewable Energy Microgrids</strong></li>
+          <li><strong>Environmental Impact Assessment using AI Techniques</strong></li>
+          <li><strong>Integration of AI in Climate Change Mitigation Strategies</strong></li>
+          <li><strong>AI and IoT for Enhanced Energy Monitoring Systems</strong></li>
+          <li><strong>Smart Renewable Energy System Design with AI</strong></li>
+          <li><strong>Data-Driven Policy Making in Renewable Energy</strong></li>
+          <li><strong>Future Trends: AI and Next-Generation Renewable Technologies</strong></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

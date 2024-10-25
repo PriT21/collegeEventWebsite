@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Centre of Excellence in Astronomical Studies</title>
+    <style>
+      .bg-gradient-text {
+        background: radial-gradient(circle, #264aff, #fff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .bg-overlay {
+        background: url("/assets/aboutBackground.png") no-repeat center
+          center/cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body class="font-poppins bg-gray-100 text-gray-800">
+    <main
+      class="relative max-w-screen-lg mx-auto p-8 mt-10 text-center bg-white shadow-lg rounded-lg"
+    >
+      <!-- Background Image -->
+      <div class="bg-overlay" aria-hidden="true"></div>
+
+      <!-- About Section -->
+      <section class="mb-16">
+        <div class="relative">
+          <h1 class="text-7xl font-bold bg-gradient-text mb-2 opacity-60">
+            ABOUT
+          </h1>
+          <!-- <h2
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl font-bold text-blue-600"
+          >
+            UEM K
+          </h2> -->
+        </div>
+      </section>
+
+      <!-- About Description -->
+      <section class="space-y-8">
+        <h3 class="text-blue-600 text-3xl font-bold">Centre of Excellence in Astronomical Studies, UEMK</h3>
+        <p class="text-lg leading-relaxed">
+          The Centre of Excellence in Astronomical Studies (CoE AS) at University of Engineering and Management, Kolkata is dedicated to fostering education, and public outreach in the field of astronomy and astrophysics. This centre has an observatory which is named as Prof. Amal Kumar Raychaudhuri Observatory.  As a premier academic and research hub, the Centre serves as a bridge between theoretical knowledge and practical application, addressing fundamental questions about the universe, celestial phenomena, and space exploration. This Centre of Excellence in Astronomical Studies features both optical and radio telescopes. Students, faculty members, and visitors can explore the night sky at our observatory. We organize special lecture series on astronomy, providing students with comprehensive knowledge. Over 300 school students from various institutions have visited us. Additionally, we offer hands-on workshops on telescope making using everyday materials, enabling students to build their own telescopes. Our radio telescope facilitates satellite tracking and signal processing from various celestial radio sources. 
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

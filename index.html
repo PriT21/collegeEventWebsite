@@ -3,362 +3,390 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Angkor&family=BIZ+UDPMincho&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @layer utilities {
+        .radial-gradient-text {
+          background-image: radial-gradient(circle, #ffffff, #0a00c0);
+        }
+      }
+      body {
+        overflow-x: hidden;
+      }
+    </style>
   </head>
+  <body class="w-fit">
 
-  <body>
-    <div class="fullContainer">
-      <div class="topCont">
-        <div class="flex">
-        <div class="navBar flex">
-          <a class=" logo navItem flex">
-            <div class="navItemBtn">
-              
-            </div>
-          </a>
-          <a href="index.html" class="navItem flex">
-            <div class="navItemBtn navHome">
-              <div class="navItemBtnText">HOME</div>
-            </div>
-          </a>
-
-          <div class="dropNavItem">
-            <a href="about/about.html" class="navItem flex">
-            <div class="navItemBtn flex">
-              <div class="navItemBtnText">ABOUT US</div>
-           
-            </div>
-          </a>
-          <div class="dropDown flex">
-            <div class="dropDownContent"><a class="dropDownContentText" href="about/about_UEMK.html">UEM K</a></div>
-            <div class="dropDownContent"><a class="dropDownContentText" href="Blank_file/Blank.html">Center of Excellence in Renewable Energy, UEM K</a></div>
-            <div class="dropDownContent"><a class="dropDownContentText" href="Blank_file/Blank.html">Center of Excellence in Astronomy,UEM K</a></div>
-           
+    <nav class="bg-slate-100 sticky top-0   lg:bg-slate-200 lg:w-10/12  lg:top-5 lg:mx-auto lg:rounded-2xl shadow-xl z-50 text-white">
+      <div class="container flex justify-between lg:justify-center p-4">
+        <!-- Other content before the button -->
+        <div class="lg:hidden ml-auto">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#181818">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+        <div id="menu" class="hidden lg:flex lg:justify-between lg:w-5/6 lg:items-center lg:space-x-6">
+          <div class="relative group">
+            <a href="#" class="nav-link text-blue-600 py-2 uppercase hover:text-blue-300 transition">Home</a>
           </div>
-        </div>
-
-          <div class="dropNavItem">
-            <a href="callForPaper/call.html" class="navItem flex">
-            <div class="navItemBtn flex">
-              <div class="navItemBtnText">CALL FOR PAPER</div>
-           
+          <div class="relative group">
+            <a href="#about" class="nav-link text-blue-600 py-2 uppercase hover:text-blue-300 transition">About Us</a>
+            <div class="absolute left-0 hidden group-hover:block bg-white text-black w-40 rounded-lg shadow-lg">
+              <a href="subPages/abtUEM.html" class="block px-4 py-2 hover:bg-blue-100">University Of Engineering and Management Kolkata</a>
+              <a href="subPages/abtCOERE.html" class="block px-4 py-2 hover:bg-blue-100">Centre of Excellence in Renewable Energy, UEMK</a>
+              <a href="subPages/abtCOEA.html" class="block px-4 py-2 hover:bg-blue-100">Centre of Excellence in Astronomical Studies, UEMK</a>
             </div>
-          </a>
-          <div class="dropDown flex">
-            <div class="dropDownContent"><a class="dropDownContentText" href="Blank_file/Blank.html">Track Of COnference</a></div>
-            <div class="dropDownContent"><a class="dropDownContentText" href="Blank_file/Blank.html">Submission Guidelines</a></div>
-            <div class="dropDownContent"><a class="dropDownContentText" href="Blank_file/Blank.html">Paper Submission Link</a></div>
-            <div class="dropDownContent"><a class="dropDownContentText" href="Blank_file/Blank.html">Presentation Guidelines</a></div>
           </div>
-        </div>
-
-        <div class="dropNavItem">
-          <a href="#keyDateCont" class="navItem flex">
-            <div class="navItemBtn">
-              <div class="navItemBtnText">KEY DATES</div>
+          <div class="relative group">
+            <a href="subPages/callpapers.html" class="nav-link text-blue-600 py-2 uppercase hover:text-blue-300 transition">Call Of Papers</a>
+            <div class="absolute left-0 hidden group-hover:block bg-white text-black w-40 rounded-lg shadow-lg">
+              <a href="subPages/Trackpagefinal.html" class="block px-4 py-2 hover:bg-blue-100">Track Of Conference</a>
+              <a href="#" class="block px-4 py-2 hover:bg-blue-100">Submission Guidelines</a>
+              <a href="#" class="block px-4 py-2 hover:bg-blue-100">Paper Submission Link</a>
+              <a href="#" class="block px-4 py-2 hover:bg-blue-100">Presentation Guidelines</a>
             </div>
-          </a>
-          <div class="dropDown flex">
-            
-            <div class="dropDownContent"><a class="dropDownContentText" href="Blank_file/Blank.html">Paper submissions (Open)</a></div>
-            <div class="dropDownContent"><a class="dropDownContentText" href="Blank_file/Blank.html">Paper submissions (Close)</a></div>
-            <div class="dropDownContent"><a class="dropDownContentText" href="Blank_file/Blank.html">Notification of acceptance</a></div> 
           </div>
-        </div>
-
-          <a href="Registration/index.html" class="navItem flex">
-            <div class="navItemBtn">
-              <div class="navItemBtnText">REGISTRATION</div>
+          <div class="relative group">
+            <a href="#keydates" class="nav-link text-blue-600 py-2 uppercase hover:text-blue-300 transition">Key Dates</a>
+            <div class="absolute left-0 hidden group-hover:block bg-white text-black w-40 rounded-lg shadow-lg">
+              <a href="#" class="block px-4 py-2 hover:bg-blue-100">Paper Submissions(Open)</a>
+              <a href="#" class="block px-4 py-2 hover:bg-blue-100">Paper Submissions(Close)</a>
+              <a href="#" class="block px-4 py-2 hover:bg-blue-100">Notification Of Acceptance</a>
             </div>
-          </a>
-
-          <div class="dropNavItem">
-            <a href="Comittee/index.html" class="navItem flex">
-            <div class="navItemBtn flex">
-              <div class="navItemBtnText">COMMITTEE</div>
-           
-            </div>
-          </a>
-          <div class="dropDown flex">
-            <div class="dropDownContent"><a class="dropDownContentText" href="Blank_file/Blank.html">Organizing Comittee</a></div>
-            <div class="dropDownContent"><a class="dropDownContentText" href="Comittee/National_Committee.html">National Advisory Comittee</a></div>
-            <div class="dropDownContent"><a class="dropDownContentText" href="Comittee/International_Committee.html">International Advisory Comittee</a></div>
-            <div class="dropDownContent"><a class="dropDownContentText" href="Comittee/Technical_Committee.html">Technical Program Comittee</a></div>
-            <div class="dropDownContent"><a class="dropDownContentText" href="Comittee/Student_Committee.html">Student Comittee</a></div>
-           
           </div>
-        </div>
-
-          <a href="Keynote_Speakers/index.html" class="navItem flex">
-            <div class="navItemBtn">
-              <div class="navItemBtnText">KEYNOTE SPEAKERS</div>
+          <div class="relative group">
+            <a href="subPages/registration.html" class="nav-link text-blue-600 py-2 uppercase hover:text-blue-300 transition">Registration</a>
+          </div>
+          <div class="relative group">
+            <a href="subPages/committee/index.html" class="nav-link text-blue-600 py-2 uppercase hover:text-blue-300 transition">Committee</a>
+            <div class="absolute left-0 hidden group-hover:block bg-white text-black w-40 rounded-lg shadow-lg">
+              <a href="subPages/committee/index.html" class="block px-4 py-2 hover:bg-blue-100">Organizing Committee</a>
+              <a href="subPages/committee/National_Committee.html" class="block px-4 py-2 hover:bg-blue-100">National Advisory Committee</a>
+              <a href="subPages/committee/International_Committee.html" class="block px-4 py-2 hover:bg-blue-100">International Advisory Committee</a>
+              <a href="subPages/committee/Technical_Committee.html" class="block px-4 py-2 hover:bg-blue-100">Technical Program Committee</a>
+              <a href="subPages/committee/Student_Committee.html" class="block px-4 py-2 hover:bg-blue-100">Student Committee</a>
             </div>
-          </a>
-          <a href="#" class="navItem flex">
-            <div class="navItemBtn">
-              <div class="navItemBtnText">CONTACT US</div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="homeLogos">
-        <div class="homeLogo">
-          <img src="assets/75yrs.png" alt="">
-        </div>
-        <div class="homeLogo">
-          <img src="assets/UEM W.png" alt="">
-        </div>
-        <div class="homeLogo">
-          <img src="assets/AICARE.png" alt="">
-        </div>
-        <div class="homeLogo">
-          <img src="assets/IEM White.png" alt="">
-        </div>
-        <div class="homeLogo">
-          <img src="assets/Renewable.png" alt="">
-        </div>
-        
-      </div>
-
-        <div class="bodyTopCont flex">
-          <div class="bodyContainer ">
-            <div class="headingBody flex">AICARE 2025</div>
-            <div class="descriptionBody">
-              Artificial Intelligence for Computing, Astronomy and Renewable Energy
-            </div>
-            <div class="timer">
-                <div class="timerFirst flex">
-                    <img src="assets/timerClock.png" alt="" class="timerPic">
-                    <div class="timerFirstText">
-                        The conference will begin in....
-                    </div>
-                </div>
-                <div class="timerLast flex">
-                    <div class="timerDisplayBox">
-                      <div class="timerDisplayBoxNumber flex ">
-                        00
-                      </div>
-                      <div class="timerDisplayBoxText flex">
-                        Days
-                      </div>
-                    </div>
-                    <div class="timerDisplayBox">
-                      <div class="timerDisplayBoxNumber flex ">
-                        00
-                      </div>
-                      <div class="timerDisplayBoxText flex">
-                        Days
-                      </div>
-                    </div><div class="timerDisplayBox">
-                      <div class="timerDisplayBoxNumber flex ">
-                        00
-                      </div>
-                      <div class="timerDisplayBoxText flex">
-                        Days
-                      </div>
-                    </div><div class="timerDisplayBox">
-                      <div class="timerDisplayBoxNumber flex ">
-                        00
-                      </div>
-                      <div class="timerDisplayBoxText flex">
-                        Days
-                      </div>
-                    </div>
-                </div>
-                <div class="timerProgressBar flex">
-                  <img src="assets/Group 237814.png" alt="" class="timerProgressBarPic">
-                </div>
-            </div>
-            
+          </div>
+          <div class="relative group">
+            <a href="subPages/speakers.html" class="nav-link text-blue-600 py-2 uppercase hover:text-blue-300 transition">Speakers</a>
+          </div>
+          <div class="relative group">
+            <a href="subPages/contactUs.html" class="nav-link text-blue-600 py-2 uppercase hover:text-blue-300 transition">Contact Us</a>
           </div>
         </div>
       </div>
-      <div class="lastCont flex">
-        <div class="announceCont ">
-          <div class="announceHeading flex">
-            ANNOUNCEMENT
+      <div id="mobile-menu" class="hidden lg:hidden text-center">
+        <!-- Added text-[#181818] for text color change -->
+        <div class="p-4">
+          <div class="mb-2">
+            <a href="#" class="block px-4 py-2 uppercase text-[#181818] hover:text-blue-300">Home</a>
           </div>
-           
-            <div class="announceDesciption ">
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</li>
-                    <li>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</li>
-                    <li>ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</li>
-                    <li>ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</li>
-                    <li>ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</li>
-                </ul>
-            
-        </div>
-      </div>
-      <div class="generalContainer ">
-        <div class="aboutItem ">
-          <div class="aboutItem2Heading flex">
-              <div class="aboutItem2HeadingText">
-                  
-                  JOURNEY
-              </div>
-              <div class="aboutItem2HeadingText">
-
-                  ABOUT
-              </div>
+          <div class="mb-2">
+            <a href="#about" class="block px-4 py-2 uppercase text-[#181818] hover:text-blue-300">About Us</a>
+            <div class="pl-4">
+              <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-[#181818]">University Of Engineering and Management Kolkata</a>
+              <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-[#181818]">Centre of Excellence in Renewable Energy, UEMK</a>
+              <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-[#181818]">Centre of Excellence in Astronomical Studies, UEMK</a>
+            </div>
           </div>
-          <div class="aboutItemDescription flex">
-            <div class="aboutItemDescriptionText">
-              International Conference on “Artificial Intelligence for Computing, Astronomy and Renewable Energy” (AICARE 2025) is being organized by the Centre Of Excellence in Renewable Energy, UEM Kolkata and Centre Of Excellence in Astronomy, UEM KOLKATA. The conference is technically co-sponsored by IEEE Kolkata Section. 
+          <div class="mb-2">
+            <a href="#" class="block px-4 py-2 uppercase text-[#181818] hover:text-blue-300">Call Of Papers</a>
+            <div class="pl-4">
+              <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-[#181818]">Track Of Conference</a>
+              <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-[#181818]">Submission Guidelines</a>
+              <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-[#181818]">Paper Submission Link</a>
+              <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-[#181818]">Presentation Guidelines</a>
+            </div>
           </div>
-        </div>
-        <div class="aboutButtons flex">
-          <div class="aboutBtns ">
-            <a href="about/about.html" class="aboutBtn ">
-              More Info
-            </a>
-            <a href="callForPaper/call.html" class="aboutBtn ">
-              Call for Paper
-            </a>
-           
+          <div class="mb-2">
+            <a href="#keydates" class="block px-4 py-2 uppercase text-[#181818] hover:text-blue-300">Key Dates</a>
+            <div class="pl-4">
+              <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-[#181818]">Paper Submissions(Open)</a>
+              <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-[#181818]">Paper Submissions(Close)</a>
+              <a href="#" class="block px-4 py-2 hover:bg-blue-100 text-[#181818]">Notification Of Acceptance</a>
+            </div>
           </div>
-        </div>
-        </div>
-      <!-- <div class="generalCont">
-        <h2 class="generalHeading">GENERAL INFORMATION</h2>
-        <div class="info-item">
-            <div class="info-header">
-                <p>Lorem ipsum dolor sit amet adidig.</p>
-                <span class="plus-minus">+</span>
+          <div class="mb-2">
+            <a href="#" class="block px-4 py-2 uppercase text-[#181818] hover:text-blue-300">Committees</a>
+            <div class="pl-4">
+              <a href="subPages/committee/index.html" class="block px-4 py-2 hover:bg-blue-100 text-[#181818]">Organizing Committee</a>
+              <a href="subPages/committee/National_Committee.html" class="block px-4 py-2 hover:bg-blue-100 text-[#181818]">National Advisory Committee</a>
+              <a href="subPages/committee/Technical_Committee.css" class="block px-4 py-2 hover:bg-blue-100 text-[#181818]">Technical Program Committee</a>
+              <a href="subPages/committee/Student_Committee.html" class="block px-4 py-2 hover:bg-blue-100 text-[#181818]">Student Committee</a>
             </div>
-            <div class="info-content">
-                <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-            </div>
-        </div>
-        <div class="info-item">
-            <div class="info-header">
-                <p>Lorem ipsum dolor sit amet adidig.</p>
-                <span class="plus-minus">+</span>
-            </div>
-            <div class="info-content">
-                <p>Another hidden content that can be toggled.</p>
-            </div>
-        </div>
-        <div class="info-item">
-            <div class="info-header">
-                <p>Lorem ipsum dolor sit amet adidig.</p>
-                <span class="plus-minus">+</span>
-            </div>
-            <div class="info-content">
-                <p>And yet another hidden content that can be toggled.</p>
-            </div>
-        </div>
-      </div> -->
-      </div>
-    </div>
-      <!-- <div class="aboutCont">
-        <div class="aboutItems flex">
-            <div class="aboutItem ">
-                <img src="assets/aboutSeminarPic.png" alt="" class="aboutItemPic">
-            </div>
-            <div class="aboutItem ">
-                <div class="aboutItem2Heading flex">
-                    <div class="aboutItem2HeadingText">
-                        
-                        JOURNEY
-                    </div>
-                    <div class="aboutItem2HeadingText">
-
-                        ABOUT
-                    </div>
-                </div>
-                <div class="aboutItemDescription flex">
-                  <div class="aboutItemDescriptionText">
-                    International Conference on “Artificial Intelligence for Computing, Astronomy and Renewable Energy” (AICARE 2025) is being organized by the Centre Of Excellence in Renewable Energy, UEM Kolkata and Centre Of Excellence in Astronomy, UEM KOLKATA. The conference is technically co-sponsored by IEEE Kolkata Section. 
-                </div>
-              </div>
-              <div class="aboutButtons flex">
-                <div class="aboutBtns ">
-                  <a href="about/about.html" class="aboutBtn ">
-                    More Info
-                  </a>
-                  <a href="callForPaper/call.html" class="aboutBtn ">
-                    Call for Paper
-                  </a>
-                 
-                </div>
-              </div>
-              </div>
-            </div>
-       </div> -->
-      <div class="keyDates flex" id="keyDateCont">
-        <div class="keyContainer">
-          <div class="key-dates">
-              <h1>KEY<br>DATES<br></h1><div class="dt">2024</div></h1>
           </div>
-          <div class="submission-list">
-              <div class="submission-item">
-                  <div class="date">
-                      <span>MAY</span>
-                      <span>15</span>
-                  </div>
-                  <div class="submission-details">
-                      <h2>PAPER SUBMISSION</h2>
-                      <p>Abcdefghijklmnopqrst</p>
-                  </div>
-              </div>
-  
-              <div class="submission-item2">
-                  
-                  <div class="submission-details">
-                      <h2>PAPER SUBMISSION</h2>
-                      <p>Abcdefghijklmnopqrst</p>
-                  </div>
-                  <div class="date">
-                      <span>MAY</span>
-                      <span>15</span>
-                  </div>
-              </div>
-  
-              <div class="submission-item">
-                  <div class="date">
-                      <span>MAY</span>
-                      <span>15</span>
-                  </div>
-                  <div class="submission-details">
-                      <h2>PAPER SUBMISSION</h2>
-                      <p>Abcdefghijklmnopqrst</p>
-                  </div>
-              </div>
-  
-              <div class="submission-item2">
-                  
-                  <div class="submission-details">
-                      <h2>PAPER SUBMISSION</h2>
-                      <p>Abcdefghijklmnopqrst</p>
-                  </div>
-                  <div class="date">
-                      <span>MAY</span>
-                      <span>15</span>
-                  </div>
-                </div>
+          <div class="mb-2">
+            <a href="#" class="block px-4 py-2 uppercase text-[#181818] hover:text-blue-300">Registration</a>
+          </div>
+          <div class="mb-2">
+            <a href="#" class="block px-4 py-2 uppercase text-[#181818] hover:text-blue-300">Speakers</a>
+          </div>
+          <div class="mb-2">
+            <a href="#" class="block px-4 py-2 uppercase text-[#181818] hover:text-blue-300">Contact Us</a>
           </div>
         </div>
       </div>
+    </nav>
     
-    <div class="footer">
-    <div class="footerHeading">
-      IEEE CATCON 2024
-    </div>
-    <div class="footerDescription">
-      2024 IEEE 7th International Conference on Condition Assessment Techniques in Electrical Systems
+
+
+
+
+<div class="HeroSection flex flex-col justify-items-center items-center bg-cover bg-center w-full lg:mt-24 h-screen static" 
+     style="background-image: url('assets/pc\ bg.png');">
+  
+  <!-- Responsive Logos Container -->
+  <div class="logos flex flex-wrap  justify-center space-x-3 space-y-4 lg:space-y-0 lg:space-x-6 mb-6 w-10/12 lg:w-8/12">
+    <img src="./assets/IEM_Logo.png" class="w-20 absolute top-3 left-5 lg:w-24" />
+    <div class="absolute flex flex-wrap  justify-center space-x-3 space-y-4 lg:space-y-0 lg:space-x-8 top-28">
+      <img src="./assets/IEEE_kol_logo.png" class="w-16 lg:w-32 mt-10 lg:h-20 " />
+    <img src="./assets/Azadi_Logo.png" class="w-20 lg:w-36" />
+    <img src="./assets/Renewable_Energy_Logo.png" class="w-16 lg:w-36" />
+    <img src="./assets/AI_Care_Logo.png" class="w-20 lg:w-36" />
+    <img src="./assets/Space_Observatory_Logo.png" class="w-16 lg:w-36" />
+    <img src="./assets/IEEE_Logo.png" class="w-20  lg:w-36 " />
+    <img src="./assets/IEEE_PES.png" class="w-16 lg:w-36" />
+
+  </div>
+    <img src="./assets/UEM_Logo.png" class="w-20 absolute top-3 right-5 lg:w-24" />
+  </div>
+
+  <!-- Content Section -->
+  <div class="home_cont h-full flex items-center">
+    <div class="flex flex-col justify-items-center items-center text-center">
+      
+      <!-- Main Heading -->
+      <div class="heading m-4 lg:m-8 font-semibold text-4xl lg:text-6xl text-white">AICARE 2025</div>
+      
+      <!-- Subheading 1 -->
+      <div class="sub_heading_1 font-normal text-lg lg:text-xl text-white">
+        Artificial Intelligence for Computing, Astronomy and Renewable Energy
+      </div>
+      
+      <!-- Subheading 2 -->
+      <div class="sub_heading_1 m-4 lg:m-8 font-normal text-xl lg:text-3xl text-white">
+        The conference will begin in....
+      </div>
+
+      <!-- Timer Box -->
+      <div class="Timer_Box flex justify-center space-x-5 lg:space-x-10 m-4 lg:m-8">
+
+        <!-- First Timer Box (Days) -->
+        <div class="bg-[#D2E1F9] h-16 w-20 lg:h-20 lg:w-28 rounded-lg flex flex-col justify-center items-center">
+          <span class="text-3xl lg:text-4xl font-semibold">99</span>
+          <span class="text-sm">Days</span>
+        </div>
+  
+        <!-- Second Timer Box (Hours) -->
+        <div class="h-16 w-20 lg:h-20 lg:w-28 p-px rounded-lg bg-gradient-to-tr from-blue-500 via-white via-blue-500 to-blue-500">
+          <div class="bg-black rounded-lg h-full w-full flex flex-col justify-center items-center text-white">
+            <span class="text-3xl lg:text-4xl font-semibold">17</span>
+            <span class="text-sm">Hours</span>
+          </div>
+        </div>
+  
+        <!-- Third Timer Box (Minutes) -->
+        <div class="h-16 w-20 lg:h-20 lg:w-28 p-px rounded-lg bg-gradient-to-tr from-blue-500 via-white via-blue-500 to-blue-500">
+          <div class="bg-black rounded-lg h-full w-full flex flex-col justify-center items-center text-white">
+            <span class="text-3xl lg:text-4xl font-semibold">55</span>
+            <span class="text-sm">Minutes</span>
+          </div>
+        </div>
+  
+        <!-- Fourth Timer Box (Seconds) -->
+        <div class="h-16 w-20 lg:h-20 lg:w-28 p-px rounded-lg bg-gradient-to-tr from-blue-500 via-white via-blue-500 to-blue-500">
+          <div class="bg-black rounded-lg h-full w-full flex flex-col justify-center items-center text-white">
+            <span class="text-3xl lg:text-4xl font-semibold">11</span>
+            <span class="text-sm">Seconds</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Progress Bar -->
+      <div class="Progress_Bar flex justify-center">
+        <img src="./assets/Progressbar.png" class="w-11/12 lg:w-6/12" />
+      </div>
+      
     </div>
   </div>
-  </body>
+</div>
+
+
   
-  <script src="index.js"></script>
+  <div id="about" class="About">
+    <div class="aboutCont  my-16 vw-100 min-h-fit	  bg-[url('assets/AboutBg.png')] flex flex-col lg:flex-row ">
+
+      <div class="flex m-5 lg:m-20 my-10 lg:my-40 w-auto lg:w-4/12 h-auto lg:h-4/5">
+        <div class="announceCont mx-auto w-11/12 lg:w-10/12">
+          <div class="announceHeading font-bold mx-auto h-1/6 flex w-fit text-2xl lg:text-3xl">
+            ANNOUNCEMENT
+          </div>
+          <div class="announceDescription mx-auto max-h-60 lg:max-h-80 overflow-y-scroll w-full border-solid border-2 border-black p-4 lg:p-5 rounded-lg">
+            <ul class="list-disc space-y-2 text-left pl-5">
+
+              <li>
+                Keynote Speaker Announced: Dr. Emily Zhao from MIT will deliver the keynote on AI and renewable energy at AICARE 2025!
+              </li>
+              <li>
+                Early Bird Registration: Register by Dec 15, 2024, for discounted rates to join leaders in AI, astronomy, and energy
+              </li>
+              <li>
+                AI in Astronomy Workshop: Join Dr. Carlos Mendosa’s workshop on AI for space exploration and celestial mapping—limited seats!
+              </li>
+              <li>
+                Keynote Speaker Announced: Dr. Emily Zhao from MIT will deliver the keynote on AI and renewable energy at AICARE 2025!
+              </li>
+              <li>
+                Early Bird Registration: Register by Dec 15, 2024, for discounted rates to join leaders in AI, astronomy, and energy
+              </li>
+              <li>
+                AI in Astronomy Workshop: Join Dr. Carlos Mendosa’s workshop on AI for space exploration and celestial mapping—limited seats!
+              </li>
+              <li>
+                Keynote Speaker Announced: Dr. Emily Zhao from MIT will deliver the keynote on AI and renewable energy at AICARE 2025!
+              </li>
+              <li>
+                Early Bird Registration: Register by Dec 15, 2024, for discounted rates to join leaders in AI, astronomy, and energy
+              </li>
+              <li>
+                AI in Astronomy Workshop: Join Dr. Carlos Mendosa’s workshop on AI for space exploration and celestial mapping—limited seats!
+              </li>
+              <li>
+                Keynote Speaker Announced: Dr. Emily Zhao from MIT will deliver the keynote on AI and renewable energy at AICARE 2025!
+              </li>
+              <li>
+                Early Bird Registration: Register by Dec 15, 2024, for discounted rates to join leaders in AI, astronomy, and energy
+              </li>
+              <li>
+                AI in Astronomy Workshop: Join Dr. Carlos Mendosa’s workshop on AI for space exploration and celestial mapping—limited seats!
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="generalContainer w-full lg:w-6/12 flex flex-col items-center lg:items-start px-4 lg:px-0">
+        <div class="aboutItem">
+          <div class="aboutItem2Heading my-10 lg:my-20 block flex justify-center relative">
+            <div class="flex justify-center">
+              <div class="aboutItem2HeadingText opacity-30 text-blue-600 text-6xl lg:text-8xl radial-gradient-text bg-clip-text text-transparent font-bold">
+                JOURNEY
+              </div>
+              <div class="text-4xl lg:text-6xl text-blue-600 inset-x-1/3 top-3 lg:top-6 lg:left-72 absolute">
+                ABOUT
+              </div>
+            </div>
+          </div>
+  
+          <div class="aboutItemDescription mt-10 lg:mt-4 h-fit flex">
+            <div class="aboutItemDescriptionText text-center lg:text-left">
+              The *International Conference on “Artificial Intelligence for Computing, Astronomy, and Renewable Energy” (AICARE 2025)* is a prestigious event, organized by the Centre of Excellence in Renewable Energy and the Centre of Excellence in Astronomy at UEM Kolkata. This conference seeks to provide a dynamic platform for researchers, industry professionals, academicians, and students from across the globe to discuss advancements in Artificial Intelligence (AI) applications in the fields of computing, astronomy, and renewable energy. AICARE 2025 emphasizes interdisciplinary collaboration, aiming to uncover the potential of AI to solve some of the most pressing challenges in these domains.
+
+In addition to the primary themes, the conference will host a wide range of tracks and sessions on innovative AI-driven research, sustainable energy solutions, astronomical discoveries, and computational technologies, fostering an environment that encourages knowledge sharing and networking. The conference’s technical sponsorship by the *IEEE Kolkata Section* further enhances its value, ensuring high standards in technical sessions and expert insights.
+            </div>
+          </div>
+
+          <div class="aboutButtons h-10 mt-10 w-full flex justify-center lg:justify-start">
+            <div class="aboutBtns w-full lg:w-10/12 gap-4 lg:gap-10 flex justify-center lg:justify-start">
+              <a href="subPages/abtUEM.html" class="my-1 hover:text-white hover:border-none hover:bg-blue-600 text-blue-800 rounded-lg border-solid border-2 border-blue-800 h-9 text-center p-1 w-5/12 lg:w-3/12 aboutBtn">
+                More Info
+              </a>
+              <a href="subPages/callpapers.html" class="my-1 hover:text-white hover:border-none hover:bg-blue-600 text-blue-800 rounded-lg border-solid border-2 border-blue-800 h-9 text-center p-1 w-6/12 lg:w-4/12 aboutBtn">
+                Call for Paper
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+<div id="keydates" class="Key_Dates_Section bg-[url('assets/AboutBg.png')]">
+  <div class="aboutItem2Heading my-4 lg:my-16 block flex justify-center relative">
+    <div class="flex justify-center">
+      <div class="aboutItem2HeadingText opacity-30 text-blue-600 text-6xl lg:text-8xl radial-gradient-text  bg-clip-text text-transparent font-bold">
+        Key Dates
+      </div>
+      <div class="text-4xl   lg:text-6xl text-blue-600 top-3.5 lg:top-6 absolute">
+        Key Dates
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col sm:flex-row h-full  w-full min-h-screen min-w-screen"
+       style="background-size: cover; background-position: center; background-repeat: no-repeat;">
+       
+      <div class="flex justify-center">
+          
+      </div>
+      <div class="flex-1 flex flex-col justify-center m-auto lg:ml-10 w-9/12 text-left p-4 sm:p-8">
+          <img src="./assets/Key_Dates_Image.png" class="image-container  sm:w-32 md:w-7/12 lg:w-96 rounded-lg mb-10 lg:mb-0 my-auto"/>
+      </div>
+      <div class="flex-1 flex flex-col gap-12 sm:gap-8 w-10/12 m-auto lg:mr-10 p-4 sm:p-8 justify-center">
+          <div class="flex items-center">
+              <div class="bg-gradient-to-b from-blue-300 to-blue-700  text-white text-center rounded transform -skew-x-6 p-2 w-[20%] max-w-[100px] flex flex-col items-center">
+                  <span class="text-[3vw] sm:text-[1.5vw]">OCT</span>
+                  <span class="text-[6vw] sm:text-[3vw] font-bold">28</span>
+              </div>
+              <div class="border-b-4 border-blue-600 mt-2 flex-grow -ml-2 -mb-2 pl-6 pr-8 py-0 lg:py-2.5 flex flex-col justify-center">
+                  <h2 class="text-[5vw] sm:text-[2vw] text-black italic font-bold">FULL PAPER SUBMISSION</h2>
+                  <p class="text-[3.5vw] sm:text-[1.5vw] text-black">28TH OCT, 2024</p>
+              </div>
+          </div>
+          <div class="flex justify-end items-center text-right">
+              <div class="border-b-4 border-blue-600 mt-2 flex-grow mr-0 pr-6 pl-8 py-1 lg:py-3.5 flex flex-col justify-center">
+                  <h2 class="text-[5vw] sm:text-[2vw] text-black italic font-bold">SUBMISSION ENDS</h2>
+                  <p class="text-[3.5vw] sm:text-[1.5vw] text-black">20TH JAN, 2025</p>
+              </div>
+              <div class="bg-gradient-to-b from-blue-300 to-blue-700  text-white text-center rounded transform -skew-x-6 p-2 w-[20%] max-w-[100px] flex flex-col items-center">
+                <span class="text-[3vw] sm:text-[1.5vw]">JAN</span>
+                <span class="text-[6vw] sm:text-[3vw] font-bold">20</span>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="bg-gradient-to-b from-blue-300 to-blue-700  text-white text-center rounded transform -skew-x-6 p-2 w-[20%] max-w-[100px] flex flex-col items-center">
+                <span class="text-[3vw] sm:text-[1.5vw]">FEB</span>
+                <span class="text-[6vw] sm:text-[3vw] font-bold">25</span>
+            </div>
+            <div class="border-b-4 border-blue-600 mt-2 flex-grow -ml-2 -mb-2 pl-6 pr-8 py-0 lg:py-2.5 flex flex-col justify-center">
+                <h2 class="text-[5vw] sm:text-[2vw] text-black italic font-bold">ACCEPTANCE NOTIFICAATIONS</h2>
+                <p class="text-[3.5vw] sm:text-[1.5vw] text-black">25TH FEB, 2025</p>
+            </div>
+        </div>
+            <div class="flex justify-end items-center text-right">
+            <div class="border-b-4 border-blue-600 mt-2 flex-grow mr-0 pr-6 pl-8 py-1 lg:py-3.5 flex flex-col justify-center">
+                <h2 class="text-[5vw] sm:text-[2vw] text-black italic font-bold">CAMERA READY SUBMISSIONS</h2>
+                <p class="text-[3.5vw] sm:text-[1.5vw] text-black">3RD MAR, 2025</p>
+            </div>
+            <div class="bg-gradient-to-b from-blue-300 to-blue-700  text-white text-center rounded transform -skew-x-6 p-2 w-[20%] max-w-[100px] flex flex-col items-center">
+              <span class="text-[3vw] sm:text-[1.5vw]">MARCH</span>
+              <span class="text-[6vw] sm:text-[3vw] font-bold">03</span>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+    <footer class="bg-gradient-to-r from-blue-300 to-blue-600 text-white py-4">
+      <div class="container m-8"></div>
+        <h3 class="font-bold text-gray-900 text-2xl mx-8"> AICARE 2025</h3>
+        <p class="text-sm mt-2 mx-8">
+          Artificial Intelligence for Computing, Astronomy and Renewable Energy 2025
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </html>
-
-
-

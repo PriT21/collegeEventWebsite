@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color:transparent ;
+}
+
+.container1 {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+}
+.committee-container{
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #3E60E9;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    z-index: 2; /* Bring JOIN US text to the front */
+}
+
+header h1::after {
+    content: "Committee";
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 70px;
+    color: rgba(62, 96, 233, 0.2);
+    z-index: 1;
+}
+
+.title-large {
+    font-size: 80px;
+    color: rgba(173, 216, 230, 0.2);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    z-index: -1;
+}
+
+.navbar {
+    background-color: #3d5afe;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px; /* Adjust this value to decrease the width */
+    margin: 0 auto 200px auto; /* Center the navbar */
+    position: relative;
+    top: 50px; /* Adjust the value to move the navbar down */
+}
+
+.committee-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.committee-btn {
+    padding: 10px 20px;
+    background-color: #3d5afe;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.committee-btn:hover,
+.committee-btn.active {
+    background-color: #1a237e;
+}
+
+.committee-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Keeps space between the items */
+    gap: 30px; /* Increased space between the items */
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between the items in each column */
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .item img {
+    width: 30vw; /* Adjust the size of the images */
+    height: auto;
+    margin-bottom: 10px; /* Space between the image and the description */
+  }
+  
+  .item p {
+    font-size: 16px; /* Font size for the description */
+    color: #333; /* Text color */
+    margin-top: 5px; /* Space above the description */
+    line-height: 1.5; /* Line height for better readability */
+  }
+  
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .member {
+        width: calc(100% - 40px);
+    }
+
+    .title-large {
+        font-size: 50px;
+        top: -20px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .committee-btn {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
+
+
+.box{
+
+    width: 20vw;
+    height: 20vh;
+    /* border: 1px solid red; */
+    margin: 0 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(62, 96, 233, 0.2);
+    
+}
+.box-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin: 3vh 0;
+    
+}
+.head1{
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    margin: 2vh;
+}
+.head2{
+    color: black;
+    height: 5vh;
+    margin-top: 1.5vh;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+
